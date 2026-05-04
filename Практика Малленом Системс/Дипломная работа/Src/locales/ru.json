@@ -1,0 +1,77 @@
+{
+  "main": {
+    "title": "Traffic Analyzer & Generator",
+    "tab_sniffer": "Анализатор",
+    "tab_analytics": "Аналитика",
+    "tab_generator": "Генератор",
+    "tab_terminal": "Scapy Терминал",
+    "tab_settings": "Настройки"
+  },
+  "sniffer": {
+    "interface_label": "Сетевая карта:",
+    "process_label": "Процесс:",
+    "process_all": "Весь трафик",
+    "btn_start": "Запустить захват",
+    "btn_stop": "Остановить захват",
+    "search_placeholder": "Быстрый поиск по таблице...",
+    "table_headers": ["No.", "Proto", "Source", "SPort", "Destination", "DPort", "Flags", "TTL", "Size (B)"],
+    "btn_clear": "Очистить таблицу",
+    "btn_load_pcap": "Загрузить PCAP",
+    "btn_save_log": "Сохранить лог файл",
+    "stats_text": "Статистика: TCP: {tcp} | UDP: {udp} | ICMP: {icmp} | Всего: {total}",
+    "search_label": "Поиск:",
+    "file_saved": "Файл сохранен: {path}",
+    "error_stop_first": "Остановите текущий захват перед загрузкой!",
+    "status_loading": "Загрузка дампа: {path}..."
+  },
+  "analytics": {
+    "title_protocols": "Протоколы",
+    "title_activity": "Активность (Пакеты / сек)",
+    "title_top_ip": "Топ-5 IP-адресов",
+    "title_flags": "TCP Флаги (Анализ угроз)",
+    "no_data": "Нет данных"
+  },
+  "generator": {
+    "group_dst": "Цель",
+    "ip_dst": "IP назначения:",
+    "port_dst": "Порт:",
+    "group_src": "Источник (Spoofing)",
+    "ip_src": "Свой IP:",
+    "port_src": "Свой Порт:",
+    "chk_rand_ip": "Случайный (Fuzzing)",
+    "chk_rand_port": "Случайный",
+    "group_packet": "Конструктор пакета",
+    "protocol": "Протокол:",
+    "tcp_flags": "TCP Флаги:",
+    "payload": "Данные (Payload):",
+    "group_send": "Управление отправкой",
+    "count_prefix": "Кол-во: ",
+    "delay_prefix": "Пауза: ",
+    "delay_suffix": " с",
+    "btn_start": "Атака / Отправка",
+    "btn_stop": "Остановить",
+    "log_title": "Лог генератора:"
+  },
+  "settings": {
+    "group_ui": "Интерфейс (Требует перезапуска для полного применения)",
+    "theme_label": "Тема оформления:",
+    "lang_label": "Язык программы:",
+    "theme_dark": "Тёмная",
+    "theme_light": "Светлая",
+    "group_data": "Очистка памяти",
+    "btn_clear_all": "🚨 СБРОСИТЬ ВСЕ ДАННЫЕ (Таблицы, Графики, Логи)",
+    "confirm_title": "Подтверждение сброса",
+    "confirm_text": "Вы уверены? Это удалит все перехваченные пакеты и обнулит статистику.",
+    "status_cleared": "Данные успешно очищены!",
+    "btn_save_config": "💾 Сохранить настройки",
+    "status_saved": "Настройки сохранены! Пожалуйста, перезапустите программу."
+  },
+  "terminal": {
+    "code_label": "Код скрипта (Python / Scapy):",
+    "console_label": "Вывод консоли:",
+    "btn_run": "Запустить скрипт",
+    "btn_clear": "Очистить вывод",
+    "running": "Выполнение...",
+    "default_code": "from scapy.all import *\n\n# Пример: вывод списка сетевых интерфейсов\nprint(conf.ifaces)\n"
+  }
+}

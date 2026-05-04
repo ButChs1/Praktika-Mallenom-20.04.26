@@ -1,0 +1,77 @@
+{
+  "main": {
+    "title": "Traffic Analyzer & Generator",
+    "tab_sniffer": "Analyzer",
+    "tab_analytics": "Analytics",
+    "tab_generator": "Generator",
+    "tab_terminal": "Scapy Terminal",
+    "tab_settings": "Settings"
+  },
+  "sniffer": {
+    "interface_label": "Network Interface:",
+    "process_label": "Process:",
+    "process_all": "All Traffic",
+    "btn_start": "Start Capture",
+    "btn_stop": "Stop Capture",
+    "search_placeholder": "Quick table search...",
+    "table_headers": ["No.", "Proto", "Source", "SPort", "Destination", "DPort", "Flags", "TTL", "Size (B)"],
+    "btn_clear": "Clear Table",
+    "btn_load_pcap": "Load PCAP",
+    "btn_save_log": "Save Log File",
+    "stats_text": "Stats: TCP: {tcp} | UDP: {udp} | ICMP: {icmp} | Total: {total}",
+    "search_label": "Search:",
+    "file_saved": "File saved: {path}",
+    "error_stop_first": "Please stop the current capture before loading!",
+    "status_loading": "Loading dump: {path}..."
+  },
+  "analytics": {
+    "title_protocols": "Protocols",
+    "title_activity": "Activity (Packets / sec)",
+    "title_top_ip": "Top-5 IP Addresses",
+    "title_flags": "TCP Flags (Threat Analysis)",
+    "no_data": "No Data"
+  },
+  "generator": {
+    "group_dst": "Target Destination",
+    "ip_dst": "Target IP:",
+    "port_dst": "Target Port:",
+    "group_src": "Source (Spoofing)",
+    "ip_src": "Source IP:",
+    "port_src": "Source Port:",
+    "chk_rand_ip": "Random (Fuzzing)",
+    "chk_rand_port": "Random",
+    "group_packet": "Packet Builder",
+    "protocol": "Protocol:",
+    "tcp_flags": "TCP Flags:",
+    "payload": "Payload Data:",
+    "group_send": "Send Control",
+    "count_prefix": "Count: ",
+    "delay_prefix": "Delay: ",
+    "delay_suffix": " s",
+    "btn_start": "Attack / Send",
+    "btn_stop": "Stop",
+    "log_title": "Generator Log:"
+  },
+  "settings": {
+    "group_ui": "Interface (Requires restart to apply fully)",
+    "theme_label": "Theme:",
+    "lang_label": "Language:",
+    "theme_dark": "Dark",
+    "theme_light": "Light",
+    "group_data": "Memory Management",
+    "btn_clear_all": "🚨 RESET ALL DATA (Tables, Charts, Logs)",
+    "confirm_title": "Confirm Reset",
+    "confirm_text": "Are you sure? This will delete all captured packets and reset statistics.",
+    "status_cleared": "Data successfully cleared!",
+    "btn_save_config": "💾 Save Settings",
+    "status_saved": "Settings saved! Please restart the program to apply changes."
+  },
+  "terminal": {
+    "code_label": "Script Code (Python / Scapy):",
+    "console_label": "Console Output:",
+    "btn_run": "Run Script",
+    "btn_clear": "Clear Output",
+    "running": "Running...",
+    "default_code": "from scapy.all import *\n\n# Example: print list of network interfaces\nprint(conf.ifaces)\n"
+  }
+}
